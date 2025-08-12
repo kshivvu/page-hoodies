@@ -1,0 +1,476 @@
+/* Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #239b7e;
+  --main-font: "Playfair Display SC", serif;
+  --primary-font: "Roboto", sans-serif;
+}
+
+
+
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logo{
+    margin-left: 5rem;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+
+}
+.strip{
+    /* background: #000; */
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: space-between
+    ; */
+    align-items: center;
+    margin-right: 5rem;
+
+}
+
+.line{
+    display: inline-block;
+   
+    width: 40px;
+    background: var(--main-color);
+    /* 
+    height: 4px; */
+    margin: 2px;
+    border: 2px solid var(--main-color);
+}
+
+.header-container{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: black; */
+    /* margin-top: 2rem; */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.header-content{
+    width: 500px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.main-heading{
+    font-size: 1.8rem;
+    font-family: var(--main-font);
+    /* height: 10rem; */
+    color: rgba(0, 0, 0, 0.592);
+    margin-bottom: 2rem;
+    /* line-height: 1.1; */
+}
+
+.main-heading span{
+    color: black;
+}
+
+.primary-content{
+    color: rgb(113, 109, 109);
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    padding: 12px 20px;
+    background: var(--main-color);
+    border: none;
+    color: white;
+    margin-right: 10px;
+}
+
+
+.active{
+    border: 2px solid var(--main-color);
+    background: #fff;
+    color: var(--main-color);
+    transition: .4s ease-in;
+}
+
+.active:hover{
+
+    color: white;
+    background: var(--main-color);
+
+}
+
+
+.img-container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    /* background: #000; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.heading-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: url(images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg);
+    background-size: cover;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.592);
+    /* background-position: center; */
+}
+
+
+
+
+.offer{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: black; */
+    /* margin-top: 2rem; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+.offer .img-container{
+    /* margin-left: 20px; */
+}
+
+
+.offer-img{
+     width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: url(images/gesphotoss-1i9K55ni5Dk-unsplash.jpg);
+    background-size: cover;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.592);
+}
+
+
+.offer-content{
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+.sub-heading h1 span{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    /* height: 10rem; */
+    color: rgba(0, 0, 0, 0.592);
+    /* margin-bottom: 2rem; */
+}
+
+.sub-heading h1{
+    font-size: 4rem;
+    font-family: var(--main-font);
+
+}
+
+
+.offer p{
+    margin-top: 2rem;
+}
+
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our-products{
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.categories{
+    margin-bottom: 4rem;
+}
+.categories .btn{
+    margin-right: 20px;
+    
+}
+.inactive{
+    background: white;
+    color:rgb(204, 204, 204);
+    border: 2px solid rgb(204, 204, 204);
+    transition: 1s ease;
+}
+.inactive:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+}
+
+.item{
+    /* width: 20rem; */
+    /* background: #000; */
+    
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    /* max-width: 60rem; */
+    margin: 20px;
+}
+
+.item-img{
+    background: rgb(235, 241, 240);
+    width: 230px;
+    height: 300px;
+    margin-bottom: 20px;
+    z-index: -1;
+    padding: 40px;
+    /* height: 230px;border: 2px solid black; */
+}
+
+.item-do{
+    width: 150px;
+    height: 220px;
+    background: url(images/Product/1.png);
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background: url(images/Product/2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.item3{
+    background: url(images/Product/3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background: url(images/Product/4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    background: url(images/Product/2.png);
+    background-size: cover;
+    background-position: center;
+}
+.item6{
+    background: url(images/Product/3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.item-name{
+    font-family: var(--primary-font);
+    margin-bottom: .8rem;
+}
+.item-price{
+    font-family: var(--primary-font);
+    margin-bottom: .8rem;
+
+}
+
+.view{
+    text-decoration: underline .5px var(--main-color);
+    text-underline-offset: 5px;
+    /* border-bottom: 1px solid var(--main-color); */
+    font-family: var(--primary-font);
+    color: var(--main-color);
+}
+
+.clients{
+    height: 100vh;
+    /* background: #333; */
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+    
+}
+
+.clients-heading{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+
+}
+
+.clients-container{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.client{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background: #333; */
+}
+.client .img-container {
+    /* background: white; */
+     /* background: url(images/yogendra-singh-uWs_N5Dlyiw-unsplash.jpg); */
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+}
+.img-client1{
+    background: url(images/yogendra-singh-uWs_N5Dlyiw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+.img-client2{
+    background: url(images/joshua-rondeau-xazIYnxpS2Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+.img-client3{
+    background: url(images/milan-popovic-kOnmHdLJTNI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+.client-name{
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+.client-review{
+    font-size: .8rem;
+    max-width: 200px;
+    font-family: var(--primary-font);
+}
+
+
+footer{
+    height: 100vh;
+    background: rgb(31, 30, 30);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foot{
+    color: white;
+    font-family: var(--primary-font);
+    padding: 5px;
+}
+
+
+.foot .foot-heading{
+    text-transform:none;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    
+}
+
+.foot p{
+    line-height:2.3;
+    font-size: 1rem;
+}
+
+
+.foot a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  header {
+    height: 120vh;
+    text-align: center;
+  }
+
+  .section-one {
+    height: 120vh;
+    text-align: center;
+  }
+
+  .header-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .primary-headings {
+    width: 400px;
+  }
+
+  .customer .customer-img .img {
+    width: 150px;
+    height: 150px;
+  }
+}
